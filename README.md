@@ -3,19 +3,30 @@
 ## Requirements
 
 * Python 3.7
-* [Pipenv](https://docs.pipenv.org/en/latest/)
+* venv installed
 
 ## Usage
 
 ```
 git clone https://github.com/geocolumbus/python-notes.git
 cd python-notes
-python3 main.py
 ```
 
-Installed by default or part of setup? TODO
+Create a virtual environment using PyCharm.
+
+Settings -> Project -> Interpreter -> Gear -> Add
+
+Add the latest brew installed Python 3 version as a "venv". PyCharm should start up the environment shell and you should see:
+
 ```
-pipenv --three
+which python  ==>  ~/PycharmProjects/python-notes/venv/bin/python
+which pip     ==>  ~/PycharmProjects/python-notes/venv/bin/pip
+```
+
+Run it.
+
+```
+python main.py
 ```
 
 ## Resources
