@@ -2,5 +2,5 @@
 
 
 def basics():
-    a = "George"
-    print(a)
+    ret = "George"
+    return ret
