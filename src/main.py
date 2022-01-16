@@ -1,0 +1,3 @@
+import strings
+
+strings.basics()
