@@ -1,6 +1,6 @@
 # Strings
 
 
-def basics():
+def example():
     ret = "George"
     return ret

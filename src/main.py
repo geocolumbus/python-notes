@@ -1,3 +1,7 @@
+import types
 import strings
+import request
 
-strings.basics()
+# types.example()
+# strings.example()
+request.example()
