@@ -1,7 +1,11 @@
-import types
-import strings
-import request
+import python_types
+import python_strings
+import python_request
 
-# types.example()
-# strings.example()
-request.example()
+# prints out the Zen of Python
+from this import d
+print()
+
+python_types.example()
+python_strings.example()
+python_request.example()

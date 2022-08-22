@@ -6,14 +6,14 @@
 #  b       Binary
 #  o       Octal
 #  x / X   Hex
-#  e / E   Expone­ntial
+#  e / E   Exponential
 #  g / G   General (default for float)
 #  n       number (generic)
 #  c       character (unicode)
 
 #  fill    Any character to fill any extra space (precedes the alignment character)
-#  <       left-a­ligned (default for objects)
-#  >       right-­aligned (default for numbers)
+#  <       left-aligned (default for objects)
+#  >       right-aligned (default for numbers)
 #  ^       centered
 #  =       fill space between sign and number
 
@@ -23,13 +23,12 @@
 
 #  +       both positive and negative sign are shown
 #  -       only negative sign is shown
-#  " "     space for positive, "­-" for negative
+#  " "     space for positive, "-" for negative
 
 #  #       Alternate form (*before width)
-#  ,       Adds "­," as thousands separator
-#  _       Adds "­_" as thousands separator
+#  ,       Adds "," as thousands separator
+#  _       Adds "_" as thousands separator
 
-from this import d
 
 def example():
     p = []
