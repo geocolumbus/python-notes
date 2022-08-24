@@ -1,5 +1,23 @@
 #  [!s | !r | !a][[fill]align][sign][#][0][minimumwidth][.precision][type]
 
+#  !s       Calls str()
+#  !r       Calls repr()  -> printable representation
+#  !a       Calls ascii() -> escapes the non-ASCII characters in the string using \x, \u or \U
+
+#  fill    Any character to fill any extra space (precedes the alignment character)
+#  <       left-aligned (default for objects)
+#  >       right-aligned (default for numbers)
+#  ^       centered
+#  =       fill space between sign and number
+
+#  +       both positive and negative sign are shown
+#  -       only negative sign is shown
+#  " "     space for positive, "-" for negative
+
+#  #       Alternate form (*before width)
+#  ,       Adds "," as thousands separator
+#  _       Adds "_" as thousands separator
+
 #  f / F   Floating point
 #  d       Integer (decimal - default for int)
 #  %       Percentage
@@ -10,25 +28,6 @@
 #  g / G   General (default for float)
 #  n       number (generic)
 #  c       character (unicode)
-
-#  fill    Any character to fill any extra space (precedes the alignment character)
-#  <       left-aligned (default for objects)
-#  >       right-aligned (default for numbers)
-#  ^       centered
-#  =       fill space between sign and number
-
-#  s       Calls str()
-#  r       Calls repr()  -> printable representation
-#  a       Calls ascii() -> escapes the non-ASCII characters in the string using \x, \u or \U
-
-#  +       both positive and negative sign are shown
-#  -       only negative sign is shown
-#  " "     space for positive, "-" for negative
-
-#  #       Alternate form (*before width)
-#  ,       Adds "," as thousands separator
-#  _       Adds "_" as thousands separator
-
 
 def example():
     p = []
@@ -54,10 +53,11 @@ def example():
     p.append(memoryview(bytes([1, 2, 3])))
 
     for item in p:
-        # print(f"{type(item)!s:21} {item}")  # 3.6 or greater
-        print("{0!s:21} {1}".format(type(item), item))  # <3.6
-        # print("%21s %s" % (str(type(item)), str(item))) # 2
+        print(f"{type(item)!s:21} {item}")                 # 3.6 or greater
+        # print("{0!s:21} {1}".format(type(item), item))   # < 3.6
+        # print("%21s %s" % (str(type(item)), str(item)))  # 2
 
+example()
 
 #  --- OUTPUT ---
 #  <class 'str'>         123
