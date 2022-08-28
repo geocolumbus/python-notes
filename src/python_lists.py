@@ -53,55 +53,57 @@ def example():
     print("\n# list functions")
     printDir(list)
 
+result = """
+myList = [1, 2, 3, 4, 5]
+myList = list((1, 2, 3, 4, 5))
+type(myList) == list  =>  True
+len(myList) = 5
+
+myList[0:] = myList[:] = ['george', 'kelly', 'alex', 'zach', 'anne']
+myList[0:0] = []
+myList[0:2] = myList[:2] = ['george', 'kelly']
+myList[2:5] = ['alex', 'zach', 'anne']
+myList[3] = zach
+
+myList[-1:] = anne
+myList[-3:] = ['alex', 'zach', 'anne']
+myList[-3:-1] = ['alex', 'zach']
+
+for i in myList:
+i = george
+i = kelly
+i = alex
+i = zach
+i = anne
+
+for i, j in enumerate(myList):
+i = 0, j = george
+i = 1, j = kelly
+i = 2, j = alex
+i = 3, j = zach
+i = 4, j = anne
+
+myList2 = myList     # Assign same data to two names
+myList2 = myList[:]  # Make a copy of a list
+
+# Convert list to string
+", ".join(myList) = "george, kelly, alex, zach, anne"
+
+# Convert string to list
+myStr.split(", ") = ['one', 'two', 'three', 'four', 'five']
+
+# Convert range to list
+list(range(1, 6)) = [1, 2, 3, 4, 5]
+
+# Convert list to json
+json.dumps(myList) = ["george", "kelly", "alex", "zach", "anne"]
+
+# list functions
+append                        clear                         copy
+count                         extend                        index
+insert                        pop                           remove
+"""
 
 example()
 
-#  --- OUTPUT ---
-# myList = [1, 2, 3, 4, 5]
-# myList = list((1, 2, 3, 4, 5))
-# type(myList) == list  =>  True
-# len(myList) = 5
-#
-# myList[0:] = myList[:] = ['george', 'kelly', 'alex', 'zach', 'anne']
-# myList[0:0] = []
-# myList[0:2] = myList[:2] = ['george', 'kelly']
-# myList[2:5] = ['alex', 'zach', 'anne']
-# myList[3] = zach
-#
-# myList[-1:] = anne
-# myList[-3:] = ['alex', 'zach', 'anne']
-# myList[-3:-1] = ['alex', 'zach']
-#
-# for i in myList:
-# i = george
-# i = kelly
-# i = alex
-# i = zach
-# i = anne
-#
-# for i, j in enumerate(myList):
-# i = 0, j = george
-# i = 1, j = kelly
-# i = 2, j = alex
-# i = 3, j = zach
-# i = 4, j = anne
-#
-# myList2 = myList     # Assign same data to two names
-# myList2 = myList[:]  # Make a copy of a list
-#
-# # Convert list to string
-# ", ".join(myList) = "george, kelly, alex, zach, anne"
-#
-# # Convert string to list
-# myStr.split(", ") = ['one', 'two', 'three', 'four', 'five']
-#
-# # Convert range to list
-# list(range(1, 6)) = [1, 2, 3, 4, 5]
-#
-# # Convert list to json
-# json.dumps(myList) = ["george", "kelly", "alex", "zach", "anne"]
-#
-# # list functions
-# append                        clear                         copy
-# count                         extend                        index
-# insert                        pop                           remove
+
