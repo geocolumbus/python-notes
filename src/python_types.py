@@ -29,6 +29,27 @@
 #  n       number (generic)
 #  c       character (unicode)
 
+result = """
+####################################################################################################
+<class 'str'>         123
+<class 'int'>         123
+<class 'float'>       123.0
+<class 'complex'>     (123+0j)
+<class 'list'>        [1, 2, 3]
+<class 'tuple'>       (1, 2, 3)
+<class 'range'>       range(0, 3)
+<class 'dict'>        {'name': 'george', 'age': 55}
+<class 'set'>         {1, 2, 3}
+<class 'frozenset'>   frozenset({1, 2, 3})
+<class 'bool'>        True
+<class 'bool'>        False
+<class 'bytes'>       b'George'
+<class 'bytearray'>   bytearray(b'George')
+<class 'memoryview'>  <memory at 0x102615f40>
+####################################################################################################
+"""
+
+
 def example():
     p = []
 
@@ -53,25 +74,9 @@ def example():
     p.append(memoryview(bytes([1, 2, 3])))
 
     for item in p:
-        print(f"{type(item)!s:21} {item}")                 # 3.6 or greater
-        # print("{0!s:21} {1}".format(type(item), item))   # < 3.6
-        # print("%21s %s" % (str(type(item)), str(item)))  # 2
+        print(
+            f"{type(item)!s:21} {item}")  # 3.6 or greater  # print("{0!s:21} {1}".format(type(
+        # item), item))   # < 3.6  # print("%21s %s" % (str(type(item)), str(item)))  # 2
+
 
 example()
-
-#  --- OUTPUT ---
-#  <class 'str'>         123
-#  <class 'int'>         123
-#  <class 'float'>       123.0
-#  <class 'complex'>     (123+0j)
-#  <class 'list'>        [1, 2, 3]
-#  <class 'tuple'>       (1, 2, 3)
-#  <class 'range'>       range(0, 3)
-#  <class 'dict'>        {'name': 'george', 'age': 55}
-#  <class 'set'>         {1, 2, 3}
-#  <class 'frozenset'>   frozenset({1, 2, 3})
-#  <class 'bool'>        True
-#  <class 'bool'>        False
-#  <class 'bytes'>       b'George'
-#  <class 'bytearray'>   bytearray(b'George')
-#  <class 'memoryview'>  <memory at 0x104aad4c0>
